@@ -1,28 +1,22 @@
 <template>
   <div class="hello">
-    <button @click="add">+</button>
-    <span>{{ count }}</span>
-    <button @click="deep">-</button>
-  
+    <input type="text" id="owen" v-model.number="number">
+    <div v-for="num in number" :key="num.id">
+        <count></count>
+    </div>
   </div>
 </template>
 
 <script>
+import count from './frist.vue'
 export default {
-  name: 'count',
+  name: 'createInput',
+  components:{count},
   data(){
       return {
-          count :0
+          number:0
       }
   },
-  methods:{
-      add(){
-         this.count++
-      },
-      deep(){
-         this.count--
-      }
-  }
 }
 </script>
 

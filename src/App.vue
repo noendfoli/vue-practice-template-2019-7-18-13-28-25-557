@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <count></count>
+    <create-input></create-input>
   </div>
 </template>
 
 <script>
-import count from './components/frist.vue'
+import createInput from './components/second.vue'
 
 export default {
   name: 'app',
   components: {
-    count
+    createInput
   }
 }
 </script>

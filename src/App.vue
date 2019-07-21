@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <create-input></create-input>
+    <lastvue></lastvue>
   </div>
 </template>
 
 <script>
-import createInput from './components/second.vue'
-
+import lastvue from './components/last.vue'
 export default {
   name: 'app',
   components: {
-    createInput
+    lastvue
   }
 }
 </script>

@@ -3,7 +3,7 @@
     <button @click="add">+</button>
     <span>{{ count }}</span>
     <button @click="deep">-</button>
-  
+    {{data}}
   </div>
 </template>
 
@@ -18,9 +18,11 @@ export default {
   methods:{
       add(){
          this.count++
+         this.$emit("addle")
       },
       deep(){
          this.count--
+         this.$emit("deeple")
       }
   }
 }
